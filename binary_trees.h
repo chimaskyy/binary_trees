@@ -53,6 +53,11 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 int _pow(int x, int y);
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
+void enqueue(const binary_tree_t **queue, int *first, size_t *newNode);
+binary_tree_t *dequeue(const binary_tree_t **queue, int *second);
+binary_tree_t *create_queue(int *first, int *second);
+
+
 
 
 #endif
